@@ -1,9 +1,9 @@
 [package]
 name = "not_enough_syntax"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.88.0"
-description = "WIP"
+description = "Various utilities for easier work with Rust syntax."
 license = "MIT"
 homepage = "https://github.com/alordash/not_enough_syntax"
 repository = "https://github.com/alordash/not_enough_syntax"
