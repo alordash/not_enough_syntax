@@ -10,5 +10,5 @@ Documentation: https://docs.rs/not_enough_syntax/
 
 # Minimum Supported Rust Version (MSRV)
 
-`not_enough_syntax` is supported on Rust 1.85.1 and higher. `not_enough_syntax`'s MSRV will not be changed in the
+`not_enough_syntax` is supported on Rust 1.88.0 and higher. `not_enough_syntax`'s MSRV will not be changed in the
 future without bumping the major or minor version.
