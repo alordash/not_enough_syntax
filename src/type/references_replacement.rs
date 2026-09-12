@@ -65,9 +65,7 @@ impl VisitMut for ReferenceToPointerConverter {
     }
 }
 
-pub fn replace_anonymous_references_with_pointers<TType: BorrowMut<Type>>(
-    mut ty: TType,
-) -> TType {
+pub fn replace_anonymous_references_with_pointers<TType: BorrowMut<Type>>(mut ty: TType) -> TType {
     AnonymousReferenceToPointerConverter.visit_type_mut(ty.borrow_mut());
     return ty;
 }

@@ -10,11 +10,7 @@ pub struct SplitGenerics {
     pub target_generics: Generics,
     pub trait_where_predicates: Vec<WherePredicate>,
 }
-pub fn split_generics(
-    generics: &Generics,
-    trait_path: &Path,
-    target_type: &Type,
-) -> SplitGenerics {
+pub fn split_generics(generics: &Generics, trait_path: &Path, target_type: &Type) -> SplitGenerics {
     let span = generics.span();
     let mut searched_generics_idents_map = generics
         .params
