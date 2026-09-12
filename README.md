@@ -2,9 +2,9 @@
 
 Library with helpful utilities for working with Rust syntax.
 
-[![Build Status](https://github.com/alordash/not_enough_asserts/actions/workflows/ci.yml/badge.svg)](https://github.com/alordash/not_enough_asserts/actions/workflows/ci.yml)
-[![Crates.io](https://img.shields.io/crates/v/not_enough_asserts.svg)](https://crates.io/crates/not_enough_asserts)
-[![Documentation](https://docs.rs/not_enough_asserts/badge.svg)](https://docs.rs/not_enough_asserts)
+[![Build Status](https://github.com/alordash/not_enough_syntax/actions/workflows/ci.yml/badge.svg)](https://github.com/alordash/not_enough_syntax/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/not_enough_syntax.svg)](https://crates.io/crates/not_enough_syntax)
+[![Documentation](https://docs.rs/not_enough_syntax/badge.svg)](https://docs.rs/not_enough_syntax)
 
 Documentation: https://docs.rs/not_enough_syntax/
 
