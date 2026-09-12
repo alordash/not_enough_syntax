@@ -1,0 +1,19 @@
+[package]
+name = "not_enough_syntax"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88.0"
+description = "WIP"
+license = "MIT"
+homepage = "https://github.com/alordash/not_enough_syntax"
+repository = "https://github.com/alordash/not_enough_syntax"
+readme = "README.md"
+
+[dependencies]
+proc-macro2 = "1.0.95"
+quote = "1.0.40"
+syn = { version = "3.0.3", features = ["full", "visit", "visit-mut"] }
+
+[lints.clippy]
+needless_return = "allow"
+match_like_matches_macro = "allow"

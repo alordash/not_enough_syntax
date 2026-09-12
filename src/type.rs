@@ -1,0 +1,25 @@
+mod references_replacement;
+pub use references_replacement::*;
+
+pub mod path;
+
+use proc_macro2::Span;
+use syn::*;
+
+pub fn vec_of(span: Span, vec_t: Type) -> TypePath {
+    wrap(span, "Vec", vec_t)
+}
+
+pub fn box_of(span: Span, box_t: Type) -> TypePath {
+    wrap(span, "Box", box_t)
+}
+
+fn wrap(span: Span, wrapper: &'static str, wrapped: Type) -> TypePath {
+    let result = TypePath {
+        attrs: Vec::new(),
+        qself: None,
+        path: crate::path::new_generics(span, [wrapper], [GenericArgument::Type(wrapped)]),
+    };
+
+    return result;
+}
