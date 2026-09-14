@@ -72,3 +72,11 @@ pub fn remove_defaults(mut generics: Generics) -> Generics {
     }
     return generics;
 }
+
+pub fn are_empty(generics: &Generics) -> bool {
+    generics.params.is_empty()
+        && !generics
+            .where_clause
+            .as_ref()
+            .is_some_and(|x| !x.predicates.is_empty())
+}
