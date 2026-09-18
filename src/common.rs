@@ -68,6 +68,15 @@ pub fn mut_ptr_infer_type(span: Span) -> Type {
     })
 }
 
+pub fn const_ptr_void_type(span: Span) -> Type {
+    Type::Ptr(TypePtr {
+        attrs: Vec::new(),
+        star_token: Token![*](span),
+        mutability: PointerMutability::Const(Token![const](span)),
+        elem: Box::new(void_type(span)),
+    })
+}
+
 pub fn mut_ptr_void_type(span: Span) -> Type {
     Type::Ptr(TypePtr {
         attrs: Vec::new(),
